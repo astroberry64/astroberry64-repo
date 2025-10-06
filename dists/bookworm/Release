@@ -5,10 +5,10 @@ Codename: bookworm
 Architectures: arm64
 Components: main
 Description: APT repository for Astroberry64 packages
-Date: Mon, 06 Oct 2025 19:35:42 +0000
+Date: Mon, 06 Oct 2025 20:26:47 +0000
 MD5Sum:
- 1269241c7d58abcb3edad4a970032b84 363 main/binary-arm64/Packages.gz
- 6ed6e2c52c6a52de658d7486c4ff1772 552 main/binary-arm64/Packages
+ b6507a46334e77187f2f373d6060a646 1419 main/binary-arm64/Packages
+ 7324954a9a90055659b7c0a751ae97a1 675 main/binary-arm64/Packages.gz
 SHA256:
- f599c62f7ba9ca322e9d625d0beccd9b1a7c60d9c8d0eba11c8997fbada14e38 363 main/binary-arm64/Packages.gz
- a86debeeddd338b8adf4be080586c9d3ae2ff77b99e9f02461c4ff02fb0f5fdc 552 main/binary-arm64/Packages
+ 3aaba35825509f3d5a88e829fc9bf6fae150dea5ba2a0ca350f55314ae678fb1 1419 main/binary-arm64/Packages
+ ee1da2b59d3c15e98611a0c961e2f20b00962e1f119a514be3f859780dea246d 675 main/binary-arm64/Packages.gz
