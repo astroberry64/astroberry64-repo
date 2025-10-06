@@ -1,0 +1,32 @@
+Package: astroberry64-server-artwork
+Version: 2.0.1-astroberry64.1
+Architecture: all
+Maintainer: Astroberry64 Team <astroberry64@speckle.red>
+Installed-Size: 97
+Filename: pool/main/astroberry64-server-artwork/astroberry64-server-artwork_2.0.1-astroberry64.1_all.deb
+Size: 73448
+MD5sum: 0c88c69e45a0d21f0d7f8b53a3a54388
+SHA1: 9a4af324d7f931bb89435ae98249d69253993771
+SHA256: b7cb3ec49d273ff821de78f8f485797c106a7bf06d13d30818512b0f6e3f34e1
+Section: x11
+Priority: extra
+Homepage: https://github.com/astroberry64
+Description: Astroberry64 Server artwork
+
+Package: astroberry64-server-sysmod
+Version: 2.0.6-astroberry64.1
+Architecture: all
+Maintainer: Astroberry64 Team <astroberry64@speckle.red>
+Installed-Size: 102
+Depends: astroberry64-server-artwork, software-properties-common, samba, network-manager, network-manager-gnome, arc-theme, fam, qt5-qmltooling-plugins, phonon4qt5-backend-gstreamer, phonon-backend-gstreamer, gstreamer1.0-plugins-ugly, gpsd, gpsd-clients, chrony
+Replaces: zram-tools
+Filename: pool/main/astroberry64-server-sysmod/astroberry64-server-sysmod_2.0.6-astroberry64.1_all.deb
+Size: 14988
+MD5sum: 2f38979f91acc785c3b9daddb55a4fd1
+SHA1: 4519479f944982b5b20a7537a887b44a80bc0642
+SHA256: aacd728120c1684cd6427d37abf83cfb9789c330f9f9f495a589c9cba70c024d
+Section: science
+Priority: extra
+Homepage: https://github.com/astroberry64
+Description: Operating system mods and tweaks for Astroberry64 Server
+

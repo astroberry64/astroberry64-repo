@@ -1,0 +1,14 @@
+Origin: Astroberry64
+Label: Astroberry64
+Suite: bookworm-stable
+Codename: bookworm-stable
+Architectures: arm64
+Components: main
+Description: APT repository for Astroberry64 packages (stable)
+Date: Mon, 06 Oct 2025 21:36:43 +0000
+MD5Sum:
+ b6507a46334e77187f2f373d6060a646 1419 main/binary-arm64/Packages
+ b09e019d416c4247115e76780559e5b8 675 main/binary-arm64/Packages.gz
+SHA256:
+ 3aaba35825509f3d5a88e829fc9bf6fae150dea5ba2a0ca350f55314ae678fb1 1419 main/binary-arm64/Packages
+ 674c94fbcd57700192191686e9aa6f789d4b30b7cde252bd73684a695afcfbc0 675 main/binary-arm64/Packages.gz
