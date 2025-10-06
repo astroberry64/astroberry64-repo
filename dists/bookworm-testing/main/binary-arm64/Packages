@@ -30,3 +30,21 @@ Priority: extra
 Homepage: https://github.com/astroberry64
 Description: Operating system mods and tweaks for Astroberry64 Server
 
+Package: astroberry64-server-sysmod
+Version: 2.0.6-astroberry64.2
+Architecture: all
+Maintainer: Astroberry64 Team <astroberry64@speckle.red>
+Installed-Size: 102
+Depends: astroberry64-server-artwork, software-properties-common, samba, network-manager, network-manager-gnome, arc-theme, qt5-qmltooling-plugins, phonon4qt5-backend-gstreamer, gstreamer1.0-plugins-ugly, gpsd, gpsd-clients
+Recommends: chrony
+Replaces: zram-tools
+Filename: pool/main/astroberry64-server-sysmod/astroberry64-server-sysmod_2.0.6-astroberry64.2_all.deb
+Size: 15344
+MD5sum: 2d3737e7636ef01dfd39f0f9f4f6027e
+SHA1: def71142e14f830b1917f03b1c1cb40acdc3d8d1
+SHA256: e1e729e75a085706f6c25bdb1c3bfa6a5c7915c7a460fe053170bba3d593d873
+Section: science
+Priority: extra
+Homepage: https://github.com/astroberry64
+Description: Operating system mods and tweaks for Astroberry64 Server
+
