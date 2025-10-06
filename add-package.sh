@@ -25,10 +25,8 @@ mkdir -p "pool/main/${PKG_NAME}"
 cp "$DEB_FILE" "pool/main/${PKG_NAME}/"
 
 # Generate Packages file
-cd dists/bookworm/main/binary-arm64
-dpkg-scanpackages -m ../../../../pool > Packages
-gzip -k -f Packages
-cd ../../../../
+dpkg-scanpackages -m pool > dists/bookworm/main/binary-arm64/Packages
+gzip -k -f dists/bookworm/main/binary-arm64/Packages
 
 # Generate Release file
 cat > dists/bookworm/Release <<EOF
@@ -39,7 +37,7 @@ Codename: bookworm
 Architectures: arm64
 Components: main
 Description: APT repository for Astroberry64 packages
-Date: $(date -R)
+Date: $(date -Ru)
 EOF
 
 # Calculate checksums
