@@ -17,8 +17,8 @@ if [[ "$SUITE_TYPE" != "stable" && "$SUITE_TYPE" != "testing" ]]; then
     exit 1
 fi
 
-# Map to bookworm-stable or bookworm-testing
-SUITE="bookworm-${SUITE_TYPE}"
+# Map to trixie-stable or trixie-testing
+SUITE="trixie-${SUITE_TYPE}"
 
 if [ ! -f "$DEB_FILE" ]; then
     echo "Error: File $DEB_FILE not found"

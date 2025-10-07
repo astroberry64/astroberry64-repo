@@ -1,6 +1,6 @@
 # Astroberry64 APT Repository
 
-APT repository for Astroberry64 packages (64-bit Raspberry Pi OS Bookworm).
+APT repository for Astroberry64 packages (64-bit Raspberry Pi OS Trixie).
 
 ## Using this repository
 
@@ -9,7 +9,7 @@ APT repository for Astroberry64 packages (64-bit Raspberry Pi OS Bookworm).
 Add to your `/etc/apt/sources.list.d/astroberry64.list`:
 
 ```bash
-deb [trusted=yes] https://astroberry64.github.io/astroberry64-repo/ bookworm-stable main
+deb [trusted=yes] https://astroberry64.github.io/astroberry64-repo/ trixie-stable main
 ```
 
 Then update and install:
@@ -24,10 +24,10 @@ sudo apt install astroberry64-server-full
 Add to your `/etc/apt/sources.list.d/astroberry64.list`:
 
 ```bash
-deb [trusted=yes] https://astroberry64.github.io/astroberry64-repo/ bookworm-testing main
+deb [trusted=yes] https://astroberry64.github.io/astroberry64-repo/ trixie-testing main
 ```
 
-The `bookworm-testing` suite contains packages built automatically from CI/CD and should be considered unstable.
+The `trixie-testing` suite contains packages built automatically from CI/CD and should be considered unstable.
 
 ## Repository Structure
 
@@ -35,5 +35,5 @@ This repository is served via GitHub Pages at https://astroberry64.github.io/ast
 
 ### Suites
 
-- **bookworm-stable**: Production-ready packages, manually tested
-- **bookworm-testing**: Automated builds from GitHub Actions, for testing only
+- **trixie-stable**: Production-ready packages, manually tested
+- **trixie-testing**: Automated builds from GitHub Actions, for testing only
