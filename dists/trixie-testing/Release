@@ -1,14 +1,14 @@
 Origin: Astroberry64
 Label: Astroberry64
-Suite: bookworm-testing
-Codename: bookworm-testing
+Suite: trixie-testing
+Codename: trixie-testing
 Architectures: arm64
 Components: main
 Description: APT repository for Astroberry64 packages (testing)
-Date: Mon, 06 Oct 2025 21:56:41 +0000
+Date: Tue, 07 Oct 2025 21:37:58 +0000
 MD5Sum:
- 762494e80ec7a20224991a0968028ed9 800 main/binary-arm64/Packages.gz
- 08d66c780a9069cf225ae09c254c16f7 2266 main/binary-arm64/Packages
+ 9048e6a6c70808cae25225b8a58ba1c5 3002 main/binary-arm64/Packages
+ aa34056a246e5e67190787c8f3103c72 1007 main/binary-arm64/Packages.gz
 SHA256:
- 023946b32ac3e843041c2acb4f306ec03bef0bc0f0af262c9b3b1c32e3c893fe 800 main/binary-arm64/Packages.gz
- 2cf5ec0b68e1309b107051d0adff095b4826762ca685df7dd0974fbfc9d47b7c 2266 main/binary-arm64/Packages
+ 7f2e934e74b070b9c28385a96375564c0d708b20303754ef778715a59bbda6a1 3002 main/binary-arm64/Packages
+ e1cec8146981a7bce6d5efdf22196ba5bebd469bc15af6fb6766c87467d52901 1007 main/binary-arm64/Packages.gz
