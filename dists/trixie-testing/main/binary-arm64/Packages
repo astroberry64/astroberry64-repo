@@ -272,3 +272,22 @@ Description: Astroberry64 Server WUI is a web interface for Astroberry64 Server
  ready to use astronomy desktop system for Raspberry Pi
  NOTE: INDI support temporarily disabled for infrastructure testing.
 
+Package: astroberry64-server-wui
+Version: 2.0.9-astroberry64.7
+Architecture: all
+Maintainer: Astroberry64 Team <astroberry64@speckle.red>
+Installed-Size: 18439
+Depends: nginx, websockify, x11vnc, python3-bottle, python3-flask, python3-flask-socketio, python3-gevent, python3-numpy, python3-pil, python3-gps, python3-ephem, gpsd
+Recommends: virtualgps
+Filename: pool/main/astroberry64-server-wui/astroberry64-server-wui_2.0.9-astroberry64.7_all.deb
+Size: 3375372
+MD5sum: ead952415e17673fa89931130751fa39
+SHA1: 69d4dc11d74135a1a92ba303c84d0219eeed401c
+SHA256: d43ef62a1adf22809a57b7b4d7e5d60549f172ff7a2e948689fb5a697756d512
+Section: science
+Priority: extra
+Homepage: https://github.com/astroberry64
+Description: Astroberry64 Server WUI is a web interface for Astroberry64 Server
+ ready to use astronomy desktop system for Raspberry Pi
+ NOTE: INDI support temporarily disabled for infrastructure testing.
+
