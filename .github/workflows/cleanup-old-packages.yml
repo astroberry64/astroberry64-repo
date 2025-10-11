@@ -1,0 +1,86 @@
+name: Cleanup Old Package Versions
+
+on:
+  workflow_dispatch:
+    inputs:
+      keep_versions:
+        description: 'Number of versions to keep per package'
+        required: true
+        default: '3'
+        type: choice
+        options:
+          - '2'
+          - '3'
+          - '4'
+          - '5'
+      confirm_deletion:
+        description: 'Confirm deletion (will DELETE files if checked)'
+        required: true
+        type: boolean
+        default: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y dpkg-dev
+
+    - name: Analyze packages (Dry-run)
+      id: analyze
+      run: |
+        export KEEP_VERSIONS=${{ github.event.inputs.keep_versions }}
+        export DRY_RUN=1
+        ./cleanup-old-packages.sh | tee /tmp/cleanup-report.txt
+
+    - name: Upload analysis report
+      uses: actions/upload-artifact@v4
+      with:
+        name: cleanup-analysis-report
+        path: /tmp/cleanup-report.txt
+
+    - name: Execute cleanup (if confirmed)
+      if: github.event.inputs.confirm_deletion == 'true'
+      run: |
+        echo "⚠️  DELETION CONFIRMED - Executing cleanup..."
+        export KEEP_VERSIONS=${{ github.event.inputs.keep_versions }}
+        export DRY_RUN=0
+        ./cleanup-old-packages.sh
+
+        # Regenerate repository metadata
+        ./regenerate-repo.sh
+
+    - name: Commit and push changes
+      if: github.event.inputs.confirm_deletion == 'true'
+      run: |
+        git config user.name "Astroberry64 Bot"
+        git config user.email "bot@astroberry64.github.io"
+
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+
+        git commit -m "Clean up old package versions (keep ${{ github.event.inputs.keep_versions }})"$'\n\n'"Removed old package versions to reduce repository size."$'\n'"Kept ${{ github.event.inputs.keep_versions }} latest versions per package."$'\n\n'"🤖 Automated cleanup via GitHub Actions"
+        git push origin main
+
+    - name: Dry-run reminder
+      if: github.event.inputs.confirm_deletion == 'false'
+      run: |
+        echo "========================================="
+        echo "🔍 DRY-RUN MODE - No files were deleted"
+        echo "========================================="
+        echo ""
+        echo "Review the analysis report above."
+        echo "To execute deletion:"
+        echo "  1. Re-run this workflow"
+        echo "  2. Check '✓ Confirm deletion'"
+        echo ""
+        echo "⚠️  WARNING: Deletion is PERMANENT and will rewrite git history!"
