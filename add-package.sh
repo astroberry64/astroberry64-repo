@@ -25,17 +25,38 @@ if [ ! -f "$DEB_FILE" ]; then
     exit 1
 fi
 
-# Get package name
+# Get package names
 PKG_NAME=$(dpkg-deb -f "$DEB_FILE" Package)
+SOURCE_PKG=$(dpkg-deb -f "$DEB_FILE" Source)
 
-echo "Adding package: $PKG_NAME to $SUITE"
+# If no Source field, source package name = binary package name
+if [ -z "$SOURCE_PKG" ]; then
+    SOURCE_PKG="$PKG_NAME"
+else
+    # Source field can be "source-pkg (version)", extract just the name
+    SOURCE_PKG=$(echo "$SOURCE_PKG" | awk '{print $1}')
+fi
 
-# Copy to pool (shared between all suites)
-mkdir -p "pool/main/${PKG_NAME}"
+echo "Adding package: $PKG_NAME (source: $SOURCE_PKG) to $SUITE"
+
+# Calculate Debian-style pool prefix
+# For lib* packages: libc/ → pool/main/libc/
+# For other packages: first letter → pool/main/a/
+if [[ $SOURCE_PKG == lib* ]]; then
+    # lib packages: use "lib" + first letter after "lib"
+    PREFIX="lib${SOURCE_PKG:3:1}"
+else
+    # Other packages: just first letter
+    PREFIX="${SOURCE_PKG:0:1}"
+fi
+
+# Copy to pool (shared between all suites) using Debian-standard layout
+POOL_DIR="pool/main/${PREFIX}/${SOURCE_PKG}"
+mkdir -p "$POOL_DIR"
 DEB_BASENAME=$(basename "$DEB_FILE")
-POOL_FILE="pool/main/${PKG_NAME}/${DEB_BASENAME}"
+POOL_FILE="${POOL_DIR}/${DEB_BASENAME}"
 if [ "$DEB_FILE" != "$POOL_FILE" ]; then
-    cp "$DEB_FILE" "pool/main/${PKG_NAME}/"
+    cp "$DEB_FILE" "$POOL_DIR/"
 fi
 
 # Generate Packages file

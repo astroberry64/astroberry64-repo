@@ -1,14 +1,14 @@
 Origin: Astroberry64
 Label: Astroberry64
-Suite: bookworm-stable
-Codename: bookworm-stable
+Suite: trixie-stable
+Codename: trixie-stable
 Architectures: arm64
 Components: main
 Description: APT repository for Astroberry64 packages (stable)
-Date: Mon, 06 Oct 2025 21:36:43 +0000
+Date: Sat, 11 Oct 2025 20:22:24 +0000
 MD5Sum:
- b6507a46334e77187f2f373d6060a646 1419 main/binary-arm64/Packages
- b09e019d416c4247115e76780559e5b8 675 main/binary-arm64/Packages.gz
+ eb9c3b1cdcd4bf3c318c8d0f07e521d3 28567 main/binary-arm64/Packages
+ fdd6fd54d64d16a9e03751e171b27af2 8873 main/binary-arm64/Packages.gz
 SHA256:
- 3aaba35825509f3d5a88e829fc9bf6fae150dea5ba2a0ca350f55314ae678fb1 1419 main/binary-arm64/Packages
- 674c94fbcd57700192191686e9aa6f789d4b30b7cde252bd73684a695afcfbc0 675 main/binary-arm64/Packages.gz
+ f7267c0fb18986d8178d71b4ca3807d411bf4477077a358674daccb74d5db426 28567 main/binary-arm64/Packages
+ 402689c23bf06e9b5b2692683c52a29d3e62ee9363213b7eb2fb5c8cebd782f5 8873 main/binary-arm64/Packages.gz
