@@ -5,10 +5,10 @@ Codename: trixie-stable
 Architectures: arm64
 Components: main
 Description: APT repository for Astroberry64 packages (stable)
-Date: Sat, 11 Oct 2025 21:41:08 +0000
+Date: Sat, 11 Oct 2025 21:44:17 +0000
 MD5Sum:
- 218dd5a57ba76f91f7ecd28246db13d3 27672 main/binary-arm64/Packages
- 463ad034ddd6e38e311b87b3cb040abd 8747 main/binary-arm64/Packages.gz
+ ba6bd9552702042ef659060b6d74a5cd 22366 main/binary-arm64/Packages
+ cf548a2f8a91127238aacc18a7eadc54 8068 main/binary-arm64/Packages.gz
 SHA256:
- 8fc211d8b13adf8b8680507d8020db4786313961a4f423d6c04e8f11e30d6831 27672 main/binary-arm64/Packages
- bf80ca3ac2f18c1ff57cd67fdb67e46e4b72eff599ef4b053f1321c0ad1b2478 8747 main/binary-arm64/Packages.gz
+ 8dc7b73e3f910e2f5844113c6c141d04e6a8302bcb9144bb94873d69c7fdb3e5 22366 main/binary-arm64/Packages
+ 36d7bad5d761ea75c22531db4b7ae43a944996c7a27fc23ea69e74361b026bb8 8068 main/binary-arm64/Packages.gz

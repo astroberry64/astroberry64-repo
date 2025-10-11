@@ -90,41 +90,6 @@ Description: Astroberry64 Server is a ready to use astronomy desktop system for 
  This is package provides wireless hotspot functionality for Astroberry64 Server
 
 Package: astroberry64-server-sysmod
-Version: 2.0.6-astroberry64.1
-Architecture: all
-Maintainer: Astroberry64 Team <astroberry64@speckle.red>
-Installed-Size: 102
-Depends: astroberry64-server-artwork, software-properties-common, samba, network-manager, network-manager-gnome, arc-theme, fam, qt5-qmltooling-plugins, phonon4qt5-backend-gstreamer, phonon-backend-gstreamer, gstreamer1.0-plugins-ugly, gpsd, gpsd-clients, chrony
-Replaces: zram-tools
-Filename: pool/main/a/astroberry64-server-sysmod/astroberry64-server-sysmod_2.0.6-astroberry64.1_all.deb
-Size: 14988
-MD5sum: 2f38979f91acc785c3b9daddb55a4fd1
-SHA1: 4519479f944982b5b20a7537a887b44a80bc0642
-SHA256: aacd728120c1684cd6427d37abf83cfb9789c330f9f9f495a589c9cba70c024d
-Section: science
-Priority: extra
-Homepage: https://github.com/astroberry64
-Description: Operating system mods and tweaks for Astroberry64 Server
-
-Package: astroberry64-server-sysmod
-Version: 2.0.6-astroberry64.2
-Architecture: all
-Maintainer: Astroberry64 Team <astroberry64@speckle.red>
-Installed-Size: 102
-Depends: astroberry64-server-artwork, software-properties-common, samba, network-manager, network-manager-gnome, arc-theme, qt5-qmltooling-plugins, phonon4qt5-backend-gstreamer, gstreamer1.0-plugins-ugly, gpsd, gpsd-clients
-Recommends: chrony
-Replaces: zram-tools
-Filename: pool/main/a/astroberry64-server-sysmod/astroberry64-server-sysmod_2.0.6-astroberry64.2_all.deb
-Size: 15344
-MD5sum: 2d3737e7636ef01dfd39f0f9f4f6027e
-SHA1: def71142e14f830b1917f03b1c1cb40acdc3d8d1
-SHA256: e1e729e75a085706f6c25bdb1c3bfa6a5c7915c7a460fe053170bba3d593d873
-Section: science
-Priority: extra
-Homepage: https://github.com/astroberry64
-Description: Operating system mods and tweaks for Astroberry64 Server
-
-Package: astroberry64-server-sysmod
 Version: 2.0.6-astroberry64.3
 Architecture: all
 Maintainer: Astroberry64 Team <astroberry64@speckle.red>
@@ -177,82 +142,6 @@ Section: science
 Priority: extra
 Homepage: https://github.com/astroberry64
 Description: Operating system mods and tweaks for Astroberry64 Server
-
-Package: astroberry64-server-wui
-Version: 2.0.9-astroberry64.3
-Architecture: all
-Maintainer: Astroberry64 Team <astroberry64@speckle.red>
-Installed-Size: 18437
-Depends: nginx, websockify, realvnc-vnc-server, python3-pip, python3-bottle, python3-flask, python3-flask-socketio, python3-gevent, python3-numpy, python3-pil, gpsd
-Recommends: virtualgps
-Filename: pool/main/a/astroberry64-server-wui/astroberry64-server-wui_2.0.9-astroberry64.3_all.deb
-Size: 3374352
-MD5sum: 12b25f3e296b0fb8fc10fa0713db31e7
-SHA1: 4d90d66da1f965f3da9987522e1a713b8b3a26b7
-SHA256: 9a19b68f85842598cb0294d2b5aef36b9d59ef223650ef89817022ab1812cf6a
-Section: science
-Priority: extra
-Homepage: https://github.com/astroberry64
-Description: Astroberry64 Server WUI is a web interface for Astroberry64 Server
- ready to use astronomy desktop system for Raspberry Pi
- NOTE: INDI support temporarily disabled for infrastructure testing.
-
-Package: astroberry64-server-wui
-Version: 2.0.9-astroberry64.4
-Architecture: all
-Maintainer: Astroberry64 Team <astroberry64@speckle.red>
-Installed-Size: 18437
-Depends: nginx, websockify, realvnc-vnc-server, python3-pip, python3-bottle, python3-flask, python3-flask-socketio, python3-gevent, python3-numpy, python3-pil, gpsd
-Recommends: virtualgps
-Filename: pool/main/a/astroberry64-server-wui/astroberry64-server-wui_2.0.9-astroberry64.4_all.deb
-Size: 3374252
-MD5sum: fa8bf6b7361b2c91b49ac22e689377d2
-SHA1: 4de69f448fa85873ce20d78958d8f9361f7f1a67
-SHA256: ad6dfb1e1d780f06ba8581bb6abfe52bdef715885990ce9e8d72e470d0fa9979
-Section: science
-Priority: extra
-Homepage: https://github.com/astroberry64
-Description: Astroberry64 Server WUI is a web interface for Astroberry64 Server
- ready to use astronomy desktop system for Raspberry Pi
- NOTE: INDI support temporarily disabled for infrastructure testing.
-
-Package: astroberry64-server-wui
-Version: 2.0.9-astroberry64.5
-Architecture: all
-Maintainer: Astroberry64 Team <astroberry64@speckle.red>
-Installed-Size: 18439
-Depends: nginx, websockify, x11vnc, python3-pip, python3-bottle, python3-flask, python3-flask-socketio, python3-gevent, python3-numpy, python3-pil, gpsd
-Recommends: virtualgps
-Filename: pool/main/a/astroberry64-server-wui/astroberry64-server-wui_2.0.9-astroberry64.5_all.deb
-Size: 3374504
-MD5sum: a7074af978f7835a756d6a591d4cdbf4
-SHA1: 01bc2c170eb585e1d79d3a987000597f02578391
-SHA256: ec3ea29a6022879e4a299e93d4be453a1a97ab2804872da2568b59974d71d39e
-Section: science
-Priority: extra
-Homepage: https://github.com/astroberry64
-Description: Astroberry64 Server WUI is a web interface for Astroberry64 Server
- ready to use astronomy desktop system for Raspberry Pi
- NOTE: INDI support temporarily disabled for infrastructure testing.
-
-Package: astroberry64-server-wui
-Version: 2.0.9-astroberry64.6
-Architecture: all
-Maintainer: Astroberry64 Team <astroberry64@speckle.red>
-Installed-Size: 18439
-Depends: nginx, websockify, x11vnc, python3-pip, python3-bottle, python3-flask, python3-flask-socketio, python3-gevent, python3-numpy, python3-pil, gpsd
-Recommends: virtualgps
-Filename: pool/main/a/astroberry64-server-wui/astroberry64-server-wui_2.0.9-astroberry64.6_all.deb
-Size: 3375708
-MD5sum: 1d2b8a34fc33eae399428827d5eba07f
-SHA1: 27334ea2568ff223127b11d735c1e639ee5478a2
-SHA256: cc983c3356a1cd6294ccfcdb142cbfe96b1a7bdc54cabb1ef2e67493ec1f8849
-Section: science
-Priority: extra
-Homepage: https://github.com/astroberry64
-Description: Astroberry64 Server WUI is a web interface for Astroberry64 Server
- ready to use astronomy desktop system for Raspberry Pi
- NOTE: INDI support temporarily disabled for infrastructure testing.
 
 Package: astroberry64-server-wui
 Version: 2.0.9-astroberry64.7
