@@ -5,10 +5,10 @@ Codename: trixie-testing
 Architectures: arm64
 Components: main
 Description: APT repository for Astroberry64 packages (testing)
-Date: Sat, 11 Oct 2025 20:22:25 +0000
+Date: Sat, 11 Oct 2025 21:41:10 +0000
 MD5Sum:
- 42519bb59a631632fac5d4ed9dd5dbd7 8873 main/binary-arm64/Packages.gz
- eb9c3b1cdcd4bf3c318c8d0f07e521d3 28567 main/binary-arm64/Packages
+ 8083325f3799b9a4446db0f0941314f7 8747 main/binary-arm64/Packages.gz
+ 218dd5a57ba76f91f7ecd28246db13d3 27672 main/binary-arm64/Packages
 SHA256:
- bd29b5ae1233f0ecd1f497e37fb22404422f188c470be22dccd6a3eef44f25aa 8873 main/binary-arm64/Packages.gz
- f7267c0fb18986d8178d71b4ca3807d411bf4477077a358674daccb74d5db426 28567 main/binary-arm64/Packages
+ 8bc30f1a6fcf7abee953d7dcdde45e9aed090a575dc0b9de0445c1fbdb661d7f 8747 main/binary-arm64/Packages.gz
+ 8fc211d8b13adf8b8680507d8020db4786313961a4f423d6c04e8f11e30d6831 27672 main/binary-arm64/Packages

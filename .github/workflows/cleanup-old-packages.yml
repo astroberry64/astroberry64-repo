@@ -66,6 +66,9 @@ jobs:
         git config user.name "Astroberry64 Bot"
         git config user.email "bot@astroberry64.github.io"
 
+        # Stage all changes (deletions already staged by git rm, add metadata)
+        git add dists/
+
         # Check if there are changes to commit
         if git diff --staged --quiet; then
           echo "No changes to commit"
