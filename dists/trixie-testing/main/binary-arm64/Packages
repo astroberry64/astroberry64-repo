@@ -329,3 +329,134 @@ Description: Astroberry64 Server WUI is a web interface for Astroberry64 Server
  ready to use astronomy desktop system for Raspberry Pi
  NOTE: INDI support temporarily disabled for infrastructure testing.
 
+Package: indi-bin
+Source: libindi
+Version: 2.1.5
+Architecture: arm64
+Maintainer: Jasem Mutlaq <mutlaqja@ikarustech.com>
+Installed-Size: 24487
+Depends: libc6 (>= 2.38), libcfitsio10t64 (>= 4.2.0~), libcurl3t64-gnutls (>= 7.16.2), libev4t64 (>= 1:4.04), libgcc-s1 (>= 3.0), libindi1, libnova-0.16-0t64 (>= 0.16), librtlsdr0, libstdc++6 (>= 14), libusb-1.0-0 (>= 2:1.0.9), zlib1g (>= 1:1.1.4), libindi-data (>= 2.1.5)
+Conflicts: indi-astrolink4, indi-astromechfoc, indi-dreamfocuser, indi-spectracyber
+Replaces: indi-astrolink4, indi-astromechfoc, indi-dreamfocuser, indi-spectracyber
+Filename: pool/main/indi-bin/indi-bin_2.1.5_arm64.deb
+Size: 2840640
+MD5sum: 8862f0549302bc524f95524354466a57
+SHA1: e83af2da81ff4de74420bc6103017ad16c3f9553
+SHA256: 581b5f6c4d8c37712145dfadec7d735b24e5f4353beb54fcb3b2819dec98913a
+Section: misc
+Priority: optional
+Homepage: http://www.indilib.org/
+Description: INDI server, drivers and tools
+ INDI (Instrument-Neutral Device Interface) is a distributed XML-based
+ control protocol designed to operate astronomical instrumentation.
+ INDI is small, flexible, easy to parse, scalable, and stateless.
+ It supports common DCS functions such as remote control, data acquisition,
+ monitoring, and a lot more.
+ .
+ This package contains the INDI server, the drivers for the supported
+ astronomical instrumentation, and other INDI tools.
+
+Package: indi-dbg
+Source: libindi
+Version: 2.1.5
+Architecture: arm64
+Maintainer: Jasem Mutlaq <mutlaqja@ikarustech.com>
+Installed-Size: 117426
+Depends: libindi1 (= 2.1.5)
+Suggests: indi-bin (= 2.1.5)
+Conflicts: indi-astrolink4-dbg, indi-astromechfoc-dbg, indi-dreamfocuser-dbg, indi-spectracyber-dbg
+Replaces: indi-astrolink4-dbg, indi-astromechfoc-dbg, indi-dreamfocuser-dbg, indi-spectracyber-dbg
+Filename: pool/main/indi-dbg/indi-dbg_2.1.5_arm64.deb
+Size: 94914108
+MD5sum: 67b66802871d853f39f832a12842a985
+SHA1: 43002bcbe42c9834612cd2bbc665474c077cd840
+SHA256: 5e59c8e48f9ed458ef00ed137c43cf5ca70b48d5618e604635c8fa2ba73a0bea
+Section: debug
+Priority: extra
+Homepage: http://www.indilib.org/
+Description: Instrument-Neutral Device Interface library -- debug symbols
+ INDI (Instrument-Neutral Device Interface) is a distributed XML-based
+ control protocol designed to operate astronomical instrumentation.
+ INDI is small, flexible, easy to parse, scalable, and stateless.
+ It supports common DCS functions such as remote control, data acquisition,
+ monitoring, and a lot more.
+ .
+ This package contains the debug symbols for the INDI library and all the
+ utilities, useful to investigate problems in INDI.
+Build-Ids: 39e7a49cb0550a17c1c46914172cb54192d57ba0 5d5f642a45b4b70995805b1c223383d56460104a 67f52e91f87a7a476a408607a5c3fddc6997b87d 8324d020a92e2b3b84563718d875571bb985b098 a71ddcf046cf3c97cf599e01f9666d1528150d8d c719d558893fec7ebc58f5bfb3f8e6dc5358df86 01e3a8683bdec9b4aa875370c24d88fc883e05ec 03251c2946a77e2894d9bc23cfc3cb3a88bcd51c 038abe32b537be866a6082f385e705039e69dbb1 0466c6bf9b796cb8fee5046a2fa2e3cc5eb93574 046fda63488afce86b83e725cb884ba82a04917e 04d76b6a4a80bd625272cafe49a7fcae44fe8352 052533f4d9d39659c70e4282ef9cfd67a2282edd 0585bb3c153be500538330edc4f5cb72b9203076 062b86f93792b0cff8e652dd6926c6ddff9d9726 064911b110a7c874399117893e55573e6bbb2799 0695f51a533b97d1b0782339d5efd8b468031992 0801dbc5fd49f97044665619d1481538ca4de02e 0919825313ab2035d44aebb90f71de894b886b30 09676e6afc630a28570e256e9a73811d986497ff 09942959c347260da25bcc0028838286cd493e26 0a0b3e927eeb2c420859d7f4ac5492f2c9113c96 0b01e6588c2cac2af2af679967e9513d6e972782 0c99f3b267dfdd6269668432548ebb066408feb4 0d179d67f875051b0911b0dfef0b2e224aa3df53 0de271e7d602cecc54915b5d21fb1e91b5b417bb 0e55178ce031559d455a8c29a5883b30ebcf8eed 0fca80968ee515f6b666a70f6346d894f76352f5 10b78d05f43e0f4e637964456b1e6e3e7113ef6f 1290d902b1a127bc0db92a3a4005cde2453c01ba 13804fb21b3c7829c949c6d740168f10733d5ec9 1441c883399182ae7a6d3d274b3bd903625f2bdb 14fb65536471bb8c15936166d8f4faa8578028db 15a72d87f33d454f85dab6032fac18b64c5c1efd 17d5b354fe79b629afe60e08a423796f72d25426 184ab55feee5eb26565530060999a37ee9ba6629 1d0d6db71a8e34923fd9b79c8ed81f4b09d15d70 1e7cfc8099f63e1a4ae393655ccd816afad51d46 1e99f085ba73bad82d0b40a37f41040478716ea7 21dcb953e5062b87d61d9e68aa01b3122d3889e2 22c48dde27f74bf58e295423c7c570f1fe0aa6df 2711383928d5f8f9443d89876713651dd6d75752 27c5e3aab952e0497d01cf59be7c3d10f3c2dce9 286ec5900182d17e8c9dd6f1b2848f7951ae957d 29f1da34543d2ebb00f71243122e98a37d90433d 2b3b13400088d0676205978f5f916c3a000358a8 2bbd2d98e6a35932981c125550bc1d89e7fa7ae9 2ccd7af4648ff70f624c0396595cdfc5c9e0089f 2d38ba7095aa9fffbb17dce2ef821bac52563ba3 2f0450751b6376d2d4600ca164813ec4c0ace688 3124408d5b602a20b27b12453360b7afd3347be7 35b2711d237635810a1772a87c7677e6449e6486 37510112411d3a20e787bbba22e26c9a9e81781c 382d24cb5a9c9bb02e624a571d705cf72cef320f 386c9ee8a8ba9b783132e0aed2d6af1ad2ac2828 3b746046bd3bdb2be2d8b7b0e1d84d2983861de2 3b920da5d8c3046dc81208fd87a7e81fd909a469 3ca2d69f9496cee13652e48c45c4469b893bbc19 3cea668d7ea8b611481638e9087a2f9979acdda9 3f6544b03b8e4637c5a7f62c6091ae0b939f186b 42beac6839edcca622fb9fd00c0727f26fd8985b 43a48fc73921610ef96cdb58403294fd8af3df30 470f9ea1d5156e1acb99454fc266cb674c23c482 4a82b5381217225cb589e3e0f5c7481aa2ee2655 4c03d523d9f9869403d41dd8d0352989b70b1a15 4c73c1ec642b683b63cc2b71ab6f792529d5e1f3 4e9b4ed8c2b0e3a647ecccea54bcb7911c2328c8 4f1cb403f1460c5d24e067c4c31a28403a66c08b 50312d76f26a7fcaf9b6804468ca13ef7671ad0c 538884c57f43093cadea1cc5625f5aece7dc8916 5427438e35887ef77b604f2af662acbfa7298213 54f1fb28b6bcce397d579b92f5752f50df511a62 555ea417db27e7f24349b12e94092ea96adf161e 565668b35589e69ffbf6afdaa1fcc7c4f9afb41b 5743648d0fc0cdf5d10f14817c89ba81b900623a 591103b89026dca3fb87bad1187d70ae6f20c9dd 59a9d4678fa74715d2db9c365b1ab465da2aac5e 5af2c795c235bd24752e11e1d66c565efff87b55 5b33bda9b0aa0d2bd58a524558eb28a47dd54d65 5f8bbb18e2aa4095e94cb8a295cc4ef9372025b5 6148dbdfa2a808faf87acb3832eeb5e8efcd11b9 632c36c2e1f7599cdf6366b6dc8431c4ae022a8f 63479f2509893da2beed8f283ddbc4c5730eacc5 64312ff33bd122313007f34079dc79c79c8a9c51 656cc91642031a63480001138cfac8f73266cb01 67748e152222c0fdaadfb0ab9d6f76edee52d30f 68d74ff7e90914d024bc18ec528e6ff0a5b19b17 68f3febb099099d4e36567fe0aae3c5d895eab8e 69d8553b68613cd87439255dcf26e7f19abd8eba 6a8a66145d3f204df0dfbc638be40d5147b0c4c7 6b862cef57612c0e04948eeefd5ad461baa0eb3b 6c23f92b89cf9aaabd28e19fdd00e1ab7f88f116 6e01078a2075b2b011f98be011e480c95d221684 6ebb5e67f2beaa54e19ab1b79b34c64c58ff746f 6f42d0eb1b6b90d02d965dc33872dfdca44dc9e0 6f859cea4355012b44f6aecf00e2efdc351e0b87 72588fd1f0040e704fb4a2d6e0131a6f9373496c 7298824244e4fcb167e3c9fed13958c0e0117d78 72a384ca006d58cdd91731d2bf50a777d3c585d6 73d081dc9d85e69baff12bb29d02dd62c5c95cfe 7438144b59bcaf3802c95a13a3f5be0837495762 74c7310f79d1016b3c6828478ba6e1261c259762 74f595d879daa74e20895302458988bfd56d24fa 754d5e49ce761ce1b7a2047aa67488027d496dd9 76b049a93d798aba24b5cf4e6cce25a3d99aa295 79a459001cce038af923b43f27ca792c301daa4d 7df96544e0771c69d8a59c5a2c6f9f7ba696bbc4 7e4eceae8d6028ecc2ad7b5501c1197f63041fbc 8336e407c7d621f82bf0f06376a5a0b9dd5ce399 839cdbece96deb515b4033e7fde9a2d468e44bc3 8681e1ce0c776d9999fd9072f9efa24667d09e93 87d82bc2e9090c01f1dd6a57d7ae4bfaea00b02b 8c50b722919d62d1cf445d7e89caf01ba22d207b 8e0dd79e81fb6532b820787b98aff536ef15b80e 93846f2e1528271f65eed4c09cde98079103ad8e 9465355a96e8654e02dead46c61258c942213051 966719eab86c8828b60abb87bf48e6c29a0afcad 969d6ec31fdf51ceb210658ef7bfbde6f5b981a3 975b6b46776c6281455e398d03aec6b31f49ce13 985c42ac5780f6b98b765b128e6c353d448f60bc 9f45f424bfe705404ac3ba9fac045cedd24fc922 a1b19183c04ca03ee58c75adb2b57e7f3aa5317b a2602997ca80bc158e906f0b3475f46429b3ae4b a4d37093769f8d998685b86db332eadc62cd5fa9 a64896bc15ca849073041a80bd74b91f96176425 a6d914f6f6feaf8cafbf622328b5d6999a7b553b a8e5ceafaf26e574e4dab4af263624dec9df8dde aa06efcd11aba78f11424f2f10c65d55d1e3b5ba aa27f332cb4491f692ca516d18b4fcfd0af4c205 ad3150b7dbf7515ee598346b4f4239518bb20173 ad3c2270660fca7b93ddf23407c778cef8b19668 ade37e53e563cd75b6524b67d71ad5bd1b0b7b54 ae745d5ed06ee1238b649b5ec7f97c5c041f5790 b048fb48cd41639f23d982ad0bc7296fbda58fd3 b06c5f39d8b1c08e7cf691b8e867716a34e96d98 b174c4ac3f09fd4ec77e03a3f2198a80b5dd17a1 b23814465400582c3d250e4317e338b87d14dcf4 b4c9564fed33e5f4527a8d8f9afe04364ebcab8f b50474652befb5d5edb87e33186a2cdbd5bd1aa3 b6693083de7c7569f02931a6e8e4c6286c741012 b7dd4adf26ad2d17fb0f524b5e7f60675a2da8a2 b96cd8a5f2e1e7570db2f2ffa1e44b3ea5150b6f b9e17e099e0a9d716c73c5ca1e62e38784973f07 bd6530e11f87a2ed1da7f718f6c13dcf4ef73339 c01be24d5851e4e5df7c0311ecdfab06a070b007 c21d9704386d477979c7dbb0292502b2112734bb c6b015681ea8c1e1b61a8edb550922a9bcb03f9f c92e354510338df67cc7d289cde88a8295c10b5a ca23ea0f8e8d97de1b1198341b8f10da5e0a26ec cb1ca4034cb6da73d918637c977455f00d6082e4 cc048a6e5cdce633dd7114b5456045114d2785ec ced1b35f3afcb32495bff2f0b38bc4844093603b d28cc3298a0d7182f716421e061c457a4f387a10 d44d8c10d2f2df28c24fe4e190c4061dd67eb34a d51ed6ce33ff0e52d822d3c094a951f510c365ae d60069ba4fe03576cf7dc7e95d29063bd0402b68 d807c271b63a67ae56dbc2e8186d71a5fdd3a3e7 dc8b318180ffe6138f0c43559bca24cb12ffa7d0 ddcbeeb3ebba78801113d576f91a81a550867415 de6d6d29680c9551c88ead66c8b1756c68be69d9 e09cea0370146754f772c62a3e2bdfc180c95a6d e0a34c405f9ee556f2e4367a24e13f70a562b67e e1396bd4b1a078005c260fa725e7d10f87e16e52 e3ebb97686e4766a980004f2e5b74e02bac7411f e5cd358cc3f7e33c975e4a44378b059ae9d50826 e795f50c61c116efc7d692a8c3f6da1b9edbe74d e943a32f8d15a55e072bd06eef321e4358d4725f e97f25654661218e5f576f655fdf13b609f25897 eb7a4f7895a368958609e73b8a69fbdc6ed01e59 ebbdf3356da9547beb7b1fa96e29f3fbe3cdb832 ec91ed14616144463ddc2c52fad385830f1db87b f061aee9e5ae32047844d38ddbd6f27b20327155 f0a05d09c4f1f4187c217162343fc4b6e483dbec f0c17e62ca8236ae6343bd549b23b961104da3d9 f3a553106b760c02db236fa8fb0d83912cff95fc f50f8b114baa0e8b539fdfa2f99235b7838b3cbe f565f61d4af76ef26fd83a03b44f74183d1ab4fc f88f7f549624dff14708c29eb48be3b9af549d77 faac227f52b9cd2ac5bc4dca0a53ecb0bd877097 fc48f8a2f75ed03b27fabffc8619e05f749c6950 fcaf4bda2383a193c72c1921efca2bbd4d756a93
+
+Package: libindi-data
+Source: libindi
+Version: 2.1.5
+Architecture: all
+Maintainer: Jasem Mutlaq <mutlaqja@ikarustech.com>
+Installed-Size: 70
+Filename: pool/main/libindi-data/libindi-data_2.1.5_all.deb
+Size: 11588
+MD5sum: b63a0455a9672d8f99ae97c43b759363
+SHA1: 6a9d7d4c65b513d0f67d6fd21f417e5fcfa8fe5f
+SHA256: 7e18260be06fb88b05901de3511b0839f202dc3300a12df0f56abf7cac575ad6
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.indilib.org/
+Description: Instrument-Neutral Device Interface library -- shared data
+ INDI (Instrument-Neutral Device Interface) is a distributed XML-based
+ control protocol designed to operate astronomical instrumentation.
+ INDI is small, flexible, easy to parse, scalable, and stateless.
+ It supports common DCS functions such as remote control, data acquisition,
+ monitoring, and a lot more.
+ .
+ This package contains the data files for the INDI library.
+
+Package: libindi-dev
+Source: libindi
+Version: 2.1.5
+Architecture: arm64
+Maintainer: Jasem Mutlaq <mutlaqja@ikarustech.com>
+Installed-Size: 9512
+Depends: libindi1 (= 2.1.5), libusb-1.0-0-dev
+Filename: pool/main/libindi-dev/libindi-dev_2.1.5_arm64.deb
+Size: 972136
+MD5sum: 62028188d17327e572f1bc4f75585093
+SHA1: 635d63657a19976e627f73e50b63befc547b8ae5
+SHA256: 3f6deb5bfa857abdb885b1679dacad116d33530064989a217bd5d4a960fed181
+Section: libdevel
+Priority: optional
+Homepage: http://www.indilib.org/
+Description: Instrument-Neutral Device Interface library -- development files
+ INDI (Instrument-Neutral Device Interface) is a distributed XML-based
+ control protocol designed to operate astronomical instrumentation.
+ INDI is small, flexible, easy to parse, scalable, and stateless.
+ It supports common DCS functions such as remote control, data acquisition,
+ monitoring, and a lot more.
+ .
+ This package contains development headers and libraries for the INDI library.
+
+Package: libindi1
+Source: libindi
+Version: 2.1.5
+Architecture: arm64
+Maintainer: Jasem Mutlaq <mutlaqja@ikarustech.com>
+Installed-Size: 3702
+Depends: libc6 (>= 2.38), libcfitsio10t64 (>= 4.2.0~), libcurl3t64-gnutls (>= 7.16.2), libfftw3-double3 (>= 3.3.10), libgcc-s1 (>= 3.0), libgsl28 (>= 2.8+dfsg), libgslcblas0 (>= 2.8), libjpeg62-turbo (>= 1.3.1), libnova-0.16-0t64 (>= 0.16), libogg0 (>= 1.0rc3), libstdc++6 (>= 14), libtheoradec1 (>= 1.0), libtheoraenc1 (>= 1.0), libusb-1.0-0 (>= 2:1.0.9), libxisf0 (>= 0.2.13), zlib1g (>= 1:1.1.4), libindi-data (>= 2.1.5), indi-bin (>= 2.1.5)
+Conflicts: libindi-plugins, libindi0, libindialignmentdriver1, libindidriver1
+Replaces: libindi-plugins, libindi0, libindialignmentdriver1, libindidriver1
+Filename: pool/main/libindi1/libindi1_2.1.5_arm64.deb
+Size: 700060
+MD5sum: bd75d8dce305be704a399efc70aebb9e
+SHA1: 955ef76d1a4a66379c1b97315718e7ff2fc56f05
+SHA256: 43a80531a80fa9d51b5047ac6276f571ee2d5c6ffdb2a26fa7ecaa0e5a8dcffc
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.indilib.org/
+Description: Instrument-Neutral Device Interface library -- shared library
+ INDI (Instrument-Neutral Device Interface) is a distributed XML-based
+ control protocol designed to operate astronomical instrumentation.
+ INDI is small, flexible, easy to parse, scalable, and stateless.
+ It supports common DCS functions such as remote control, data acquisition,
+ monitoring, and a lot more.
+ .
+ This package contains the shared library.
+
