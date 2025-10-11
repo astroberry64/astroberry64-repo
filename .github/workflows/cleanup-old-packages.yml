@@ -13,6 +13,8 @@ on:
           - '3'
           - '4'
           - '5'
+          - '7'
+          - '10'
       confirm_deletion:
         description: 'Confirm deletion (will DELETE files if checked)'
         required: true
