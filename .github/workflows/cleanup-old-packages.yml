@@ -24,6 +24,8 @@ on:
 jobs:
   cleanup:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Allow committing and pushing changes
 
     steps:
     - name: Checkout repository
