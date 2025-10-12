@@ -25,6 +25,16 @@ if [ ! -f "$DEB_FILE" ]; then
     exit 1
 fi
 
+# TEMPORARY: Skip debug packages for lean storage and GitHub's 100MB file size limit
+# Debug packages can be 90-200 MB which may exceed GitHub's limits for git repositories.
+# When migrating to a different APT repository host, consider removing this filter.
+DEB_BASENAME=$(basename "$DEB_FILE")
+if [[ "$DEB_BASENAME" == *-dbg_*.deb ]]; then
+    echo "Skipping debug package: $DEB_BASENAME (for lean storage reasons and/or GitHub's 100MB file limit)"
+    echo "Debug packages are built but not deployed to the APT repository."
+    exit 0
+fi
+
 # Get package names
 PKG_NAME=$(dpkg-deb -f "$DEB_FILE" Package)
 SOURCE_PKG=$(dpkg-deb -f "$DEB_FILE" Source)
@@ -53,7 +63,6 @@ fi
 # Copy to pool (shared between all suites) using Debian-standard layout
 POOL_DIR="pool/main/${PREFIX}/${SOURCE_PKG}"
 mkdir -p "$POOL_DIR"
-DEB_BASENAME=$(basename "$DEB_FILE")
 POOL_FILE="${POOL_DIR}/${DEB_BASENAME}"
 if [ "$DEB_FILE" != "$POOL_FILE" ]; then
     cp "$DEB_FILE" "$POOL_DIR/"
