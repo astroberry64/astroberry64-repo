@@ -185,14 +185,14 @@ Package: astroberry64-server-wui
 Version: 2.0.9-astroberry64.9
 Architecture: all
 Maintainer: Astroberry64 Team <astroberry64@speckle.red>
-Installed-Size: 18439
+Installed-Size: 18445
 Depends: nginx, websockify, x11vnc, python3-bottle, python3-flask, python3-flask-socketio, python3-gevent, python3-numpy, python3-pil, python3-gps, python3-ephem, gpsd
 Recommends: virtualgps
 Filename: pool/main/a/astroberry64-server-wui/astroberry64-server-wui_2.0.9-astroberry64.9_all.deb
-Size: 3375808
-MD5sum: 7af9de9fabc5084a232bbadc9bec476d
-SHA1: bbcdd47b5f534255033a20b2b24bcfd711ce8dd8
-SHA256: fcb086e8614b147605b289c36bf38c9985d6ad075261f229f21114fe27e93fc4
+Size: 3376808
+MD5sum: 98613c090bb90420762ce8ca1471eaec
+SHA1: 357fa73ea9869d1102f7b72ce2877fde0af3a008
+SHA256: 527bacbaa9cd17da0ef496d3d6ce168513253a809bc2cd3becc1ec2a2dea01a2
 Section: science
 Priority: extra
 Homepage: https://github.com/astroberry64
