@@ -260,16 +260,16 @@ Package: kstars-bleeding
 Version: 6:3.7.9+202510070847~ubuntu24.04.1
 Architecture: arm64
 Maintainer: Jasem Mutlaq <mutlaqja@ikarustech.com>
-Installed-Size: 15818
-Depends: kio, libc6 (>= 2.38), libcfitsio10t64 (>= 4.2.0~), libgcc-s1 (>= 3.0), libgsl28 (>= 2.8+dfsg), libkf5configcore5 (>= 4.98.0), libkf5configgui5 (>= 4.97.0), libkf5configwidgets5 (>= 5.23.0), libkf5coreaddons5 (>= 4.100.0), libkf5i18n5 (>= 5.17.0), libkf5kiocore5 (>= 5.69.0), libkf5kiowidgets5 (>= 5.69.0), libkf5newstuff5 (>= 4.95.0), libkf5notifications5 (>= 4.96.0), libkf5notifyconfig5 (>= 4.96.0), libkf5plotting5 (>= 4.96.0), libkf5widgetsaddons5 (>= 5.77.0), libkf5xmlgui5 (>= 4.98.0), libopencv-calib3d410 (>= 4.10.0+dfsg), libopencv-core410 (>= 4.10.0+dfsg), libopencv-imgproc410 (>= 4.10.0+dfsg), libopencv-photo410 (>= 4.10.0+dfsg), libqt5concurrent5t64 (>= 5.6.0~rc), libqt5core5t64 (>= 5.15.1), libqt5datavisualization5 (>= 5.10.1), libqt5dbus5t64 (>= 5.14.1), libqt5gui5t64 (>= 5.14.1) | libqt5gui5-gles (>= 5.14.1), libqt5network5t64 (>= 5.0.2), libqt5printsupport5t64 (>= 5.0.2), libqt5qml5 (>= 5.0.2), libqt5quick5 (>= 5.0.2) | libqt5quick5-gles (>= 5.0.2), libqt5sql5t64 (>= 5.3.0), libqt5svg5 (>= 5.6.0~beta), libqt5widgets5t64 (>= 5.15.1), libraw23t64 (>= 0.21.1), libstdc++6 (>= 14), libstellarsolver2 (>= 2.6), libwcs8 (>= 8.1), libxisf0 (>= 0.2.13), zlib1g (>= 1:1.1.4), kstars-bleeding-data (>= 6:3.7.9+202510070847~ubuntu24.04.1), kstars-bleeding-dbg (= 6:3.7.9+202510070847~ubuntu24.04.1), kded5, kinit, libindi1, indi-bin, breeze-icon-theme, libqt5sql5-sqlite, qml-module-qtquick-controls
-Recommends: xplanet, xplanet-images
+Installed-Size: 32204
+Depends: kio, libc6 (>= 2.38), libcfitsio10t64 (>= 4.2.0~), libgcc-s1 (>= 4.0), libgsl28 (>= 2.8+dfsg), libindi1, libkf5configcore5 (>= 4.98.0), libkf5configgui5 (>= 4.97.0), libkf5configwidgets5 (>= 5.23.0), libkf5coreaddons5 (>= 4.100.0), libkf5i18n5 (>= 5.69.0), libkf5kiocore5 (>= 5.69.0), libkf5kiowidgets5 (>= 5.69.0), libkf5newstuff5 (>= 4.95.0), libkf5notifications5 (>= 4.96.0), libkf5notifyconfig5 (>= 4.96.0), libkf5plotting5 (>= 4.96.0), libkf5widgetsaddons5 (>= 5.100.0), libkf5xmlgui5 (>= 4.98.0), libopencv-calib3d410 (>= 4.10.0+dfsg), libopencv-core410 (>= 4.10.0+dfsg), libopencv-imgproc410 (>= 4.10.0+dfsg), libopencv-photo410 (>= 4.10.0+dfsg), libqt5concurrent5t64 (>= 5.6.0~rc), libqt5core5t64 (>= 5.15.1), libqt5datavisualization5 (>= 5.10.1), libqt5dbus5t64 (>= 5.14.1), libqt5gui5t64 (>= 5.14.1) | libqt5gui5-gles (>= 5.14.1), libqt5keychain1 (>= 0.7.0), libqt5network5t64 (>= 5.15.1), libqt5printsupport5t64 (>= 5.0.2), libqt5qml5 (>= 5.0.2), libqt5quick5 (>= 5.0.2) | libqt5quick5-gles (>= 5.0.2), libqt5sql5t64 (>= 5.3.0), libqt5svg5 (>= 5.6.0~beta), libqt5websockets5 (>= 5.6.0), libqt5widgets5t64 (>= 5.15.1), libraw23t64 (>= 0.21.1), libstdc++6 (>= 14), libstellarsolver2 (>= 2.6), libwcs8 (>= 8.1), libxisf0 (>= 0.2.13), zlib1g (>= 1:1.1.4), kstars-bleeding-data (>= 6:3.7.9+202510070847~ubuntu24.04.1), kded5, kinit, indi-bin, breeze-icon-theme, libqt5sql5-sqlite, qml-module-qtquick-controls
+Recommends: xplanet, xplanet-images, kstars-bleeding-dbg (= 6:3.7.9+202510070847~ubuntu24.04.1)
 Conflicts: kstars
 Replaces: kstars
 Filename: pool/main/k/kstars-bleeding/kstars-bleeding_3.7.9+202510070847~ubuntu24.04.1_arm64.deb
-Size: 4250788
-MD5sum: f1b2a4e8b885e2a6f91635e11f0d17de
-SHA1: f3fc220ca6ea9afa2ed743db4e274960ff5616ba
-SHA256: b0fccf2fd8677cd6cab3423883ece64db95fe41343756cc4861886cbbd205297
+Size: 7751956
+MD5sum: ed784ace3aba44ef09ab750f58539643
+SHA1: 5d98245a12b67580a6ee0d91d9355c0415a1ae9a
+SHA256: dbd55602f0e81c18b80555f6953882cc6e5e3fb54804703ee588ba7068985f40
 Section: science
 Priority: optional
 Homepage: http://edu.kde.org/
