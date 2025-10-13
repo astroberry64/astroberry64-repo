@@ -134,10 +134,10 @@ Depends: astroberry64-server-artwork, samba, network-manager, network-manager-gn
 Recommends: chrony
 Replaces: zram-tools
 Filename: pool/main/a/astroberry64-server-sysmod/astroberry64-server-sysmod_2.0.6-astroberry64.5_all.deb
-Size: 14776
-MD5sum: b9c8ff2e3f13cb06e0213b24b05722d4
-SHA1: fe108782310447186d716c3f0c1d1a5ad523dd48
-SHA256: 792cf88c020715371e2ec446edc846fed5d1c68b1928634e5c66ec3db8532a6b
+Size: 15168
+MD5sum: 5cdf43a26d3bb90f5b6d276fbd3d2bfe
+SHA1: 652820531f50b1298b9007f69b2b625fbfb58f17
+SHA256: fd446d2bdaadcfa2812f2b326e9cffd7d55bbebf5e808ae717c5ba35e278bd7a
 Section: science
 Priority: extra
 Homepage: https://github.com/astroberry64
