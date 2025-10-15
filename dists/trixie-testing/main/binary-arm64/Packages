@@ -418,3 +418,41 @@ Description: Instrument-Neutral Device Interface library -- shared library
  .
  This package contains the shared library.
 
+Package: phd2
+Version: 2.6.13dev7
+Architecture: arm64
+Maintainer: Patrick Chevalley <pch@ap-i.net>
+Installed-Size: 24104
+Depends: libc6 (>= 2.38), libcfitsio10t64 (>= 4.2.0~), libcurl3t64-gnutls (>= 7.16.2), libgcc-s1 (>= 4.0), libindi1, libnova-0.16-0t64 (>= 0.16), libopencv-core410 (>= 4.10.0+dfsg), libopencv-imgproc410 (>= 4.10.0+dfsg), libopencv-videoio410 (>= 4.10.0+dfsg), libstdc++6 (>= 14), libusb-1.0-0 (>= 2:1.0.9), libwxbase3.2-1t64 (>= 3.2.8+dfsg), libwxgtk3.2-1t64 (>= 3.2.8+dfsg), libx11-6
+Suggests: indi-bin
+Filename: pool/main/p/phd2/phd2_2.6.13dev7_arm64.deb
+Size: 11561660
+MD5sum: 9a1ad37d0d9a8a92ba015ee8a8b69627
+SHA1: d6537fc89d27e4924b902dc94afc5a46bd04a929
+SHA256: 545366cc21b4ca15d5a3d633cf5f016a913c5b3dd363b987dbad700147e8462f
+Section: education
+Priority: optional
+Homepage: http://openphdguiding.org/
+Description: PHD Guiding, auto-guiding of your telescope
+ PHD Guiding is designed to be "Push Here Dummy" simple, yet provide powerful,
+ intelligent auto-guiding of your telescope.
+ Connect your mount, your camera, select a star, and start guiding. That's it!
+
+Package: phd2-dbgsym
+Source: phd2
+Version: 2.6.13dev7
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Patrick Chevalley <pch@ap-i.net>
+Installed-Size: 39783
+Depends: phd2 (= 2.6.13dev7)
+Filename: pool/main/p/phd2/phd2-dbgsym_2.6.13dev7_arm64.deb
+Size: 34938080
+MD5sum: d95858fa5a11a39e6d942ad928a5bb46
+SHA1: e71a51a19d64dd561866c70b51256dad33f43c72
+SHA256: 1f50733e099c1a489d33551cea5e153463891131913b1f3d93534326eb41c8ed
+Section: debug
+Priority: optional
+Description: debug symbols for phd2
+Build-Ids: fa1f451911f06bcd8aaec178f56213f57ef03a08
+
