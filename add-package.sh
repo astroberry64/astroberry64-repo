@@ -29,7 +29,7 @@ fi
 # Debug packages can be 90-200 MB which may exceed GitHub's limits for git repositories.
 # When migrating to a different APT repository host, consider removing this filter.
 DEB_BASENAME=$(basename "$DEB_FILE")
-if [[ "$DEB_BASENAME" == *-dbg_*.deb ]]; then
+if [[ "$DEB_BASENAME" =~ -dbg_.*\.deb$ ]] || [[ "$DEB_BASENAME" =~ -dbgsym_.*\.deb$ ]]; then
     echo "Skipping debug package: $DEB_BASENAME (for lean storage reasons and/or GitHub's 100MB file limit)"
     echo "Debug packages are built but not deployed to the APT repository."
     exit 0
