@@ -70,6 +70,26 @@ Description: Astroberry64 Server is a ready to use astronomy
  configuration needed to run the system.
  Includes INDI server and KStars planetarium software.
 
+Package: astroberry64-server-full
+Version: 2.0.4-astroberry64.5
+Architecture: all
+Maintainer: Astroberry64 Team <astroberry64@speckle.red>
+Installed-Size: 10
+Depends: astroberry64-server-artwork, astroberry64-server-hotspot, astroberry64-server-sysmod, astroberry64-server-wui, indi-bin, kstars-bleeding, phd2, astrometry-data-2mass, astrometry-data-tycho2, astrometry.net, gpredict, gwenview, ser-player, virtualgps
+Filename: pool/main/a/astroberry64-server-full/astroberry64-server-full_2.0.4-astroberry64.5_all.deb
+Size: 3124
+MD5sum: cd2bfcbfe2768b33cd417db07124d1c5
+SHA1: b7a7289a911a28b4d933137bade54656c34f762c
+SHA256: 357891cbfe0d202f2231aab9c10a0d6863b9af516782ce4ac8acdfb839b7bd05
+Section: science
+Priority: extra
+Homepage: https://github.com/astroberry64
+Description: Astroberry64 Server is a ready to use astronomy
+ desktop system for 64-bit Raspberry Pi.
+ This is a meta-package that installs all packages and
+ configuration needed to run the system.
+ Includes INDI server and KStars planetarium software.
+
 Package: astroberry64-server-hotspot
 Version: 2.0.0-astroberry64.2
 Architecture: all
