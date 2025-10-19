@@ -5,15 +5,27 @@ set -e
 
 if [ $# -lt 1 ]; then
     echo "Usage: $0 <package.deb> [suite]"
-    echo "  suite: stable or testing (default: stable)"
+    echo "  suite: testing (stable not supported - requires promotion system)"
     exit 1
 fi
 
 DEB_FILE="$1"
-SUITE_TYPE="${2:-stable}"
+SUITE_TYPE="${2:-testing}"
 
+# Validate suite
 if [[ "$SUITE_TYPE" != "stable" && "$SUITE_TYPE" != "testing" ]]; then
-    echo "Error: Suite must be 'stable' or 'testing'"
+    echo "Error: Suite must be 'testing' or 'stable'"
+    exit 1
+fi
+
+# Block direct stable deployment - requires promotion system
+if [ "$SUITE_TYPE" = "stable" ]; then
+    echo "Error: Direct deployment to stable is not supported"
+    echo ""
+    echo "Packages must be promoted from testing to stable using the promotion system."
+    echo "The promotion system allows selective package promotion and is not yet implemented."
+    echo ""
+    echo "For now, all packages are deployed to trixie-testing only."
     exit 1
 fi
 

@@ -1,12 +1,17 @@
 #!/bin/bash
-# regenerate-repo.sh - Regenerate Packages and Release files for all suites
-# Run this after migrating pool/ structure
+# regenerate-repo.sh - Regenerate Packages and Release files for testing suite
+# Run this after migrating pool/ structure or cleaning up packages
+#
+# NOTE: This script only processes trixie-testing.
+# trixie-stable requires a promotion system (not yet implemented) to selectively
+# add packages from testing. Direct regeneration from pool/ would include all packages.
 
 set -e
 
 cd "$(dirname "$0")"
 
-SUITES=("trixie-stable" "trixie-testing")
+# Only regenerate testing suite - stable uses promotion system
+SUITES=("trixie-testing")
 
 for SUITE in "${SUITES[@]}"; do
     echo "=== Regenerating $SUITE ==="
