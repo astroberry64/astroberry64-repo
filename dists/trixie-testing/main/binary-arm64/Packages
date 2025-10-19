@@ -374,6 +374,32 @@ Description: desktop planetarium for KDE
  .
  This package is part of the KDE education module.
 
+Package: kstars-bleeding
+Version: 6:3.7.9+202510070847~ubuntu24.04.1-astroberry64.1
+Architecture: arm64
+Maintainer: Jasem Mutlaq <mutlaqja@ikarustech.com>
+Installed-Size: 32393
+Depends: kio, libc6 (>= 2.38), libcfitsio10t64 (>= 4.2.0~), libgcc-s1 (>= 4.0), libgsl28 (>= 2.8+dfsg), libindi1, libkf5configcore5 (>= 4.98.0), libkf5configgui5 (>= 4.97.0), libkf5configwidgets5 (>= 5.23.0), libkf5coreaddons5 (>= 4.100.0), libkf5i18n5 (>= 5.69.0), libkf5kiocore5 (>= 5.69.0), libkf5kiowidgets5 (>= 5.69.0), libkf5newstuff5 (>= 4.95.0), libkf5notifications5 (>= 4.96.0), libkf5notifyconfig5 (>= 4.96.0), libkf5plotting5 (>= 4.96.0), libkf5widgetsaddons5 (>= 5.100.0), libkf5xmlgui5 (>= 4.98.0), libopencv-calib3d410 (>= 4.10.0+dfsg), libopencv-core410 (>= 4.10.0+dfsg), libopencv-imgproc410 (>= 4.10.0+dfsg), libopencv-photo410 (>= 4.10.0+dfsg), libqt5concurrent5t64 (>= 5.6.0~rc), libqt5core5t64 (>= 5.15.1), libqt5datavisualization5 (>= 5.10.1), libqt5dbus5t64 (>= 5.14.1), libqt5gui5t64 (>= 5.14.1) | libqt5gui5-gles (>= 5.14.1), libqt5keychain1 (>= 0.7.0), libqt5network5t64 (>= 5.15.1), libqt5printsupport5t64 (>= 5.0.2), libqt5qml5 (>= 5.0.2), libqt5quick5 (>= 5.0.2) | libqt5quick5-gles (>= 5.0.2), libqt5sql5t64 (>= 5.3.0), libqt5svg5 (>= 5.6.0~beta), libqt5websockets5 (>= 5.6.0), libqt5widgets5t64 (>= 5.15.1), libraw23t64 (>= 0.21.1), libstdc++6 (>= 14), libstellarsolver2 (>= 2.6), libwcs8 (>= 8.1), libxisf0 (>= 0.2.13), zlib1g (>= 1:1.1.4), kstars-bleeding-data (>= 6:3.7.9+202510070847~ubuntu24.04.1-astroberry64.1), kded5, kinit, indi-bin, breeze-icon-theme, libqt5sql5-sqlite, qml-module-qtquick-controls
+Recommends: xplanet, xplanet-images, kstars-bleeding-dbg (= 6:3.7.9+202510070847~ubuntu24.04.1-astroberry64.1)
+Conflicts: kstars
+Replaces: kstars
+Filename: pool/main/k/kstars-bleeding/kstars-bleeding_3.7.9+202510070847~ubuntu24.04.1-astroberry64.1_arm64.deb
+Size: 7943728
+MD5sum: 708c8191318b0421fd52ea2d7e4250cc
+SHA1: 986e5d3159ad014d989c4df41df6ca870fb86b2e
+SHA256: 0cde6fbcacb6425f70ac96008c5a242e686ebc288c85cc93e5c2f7b3c9f7ad81
+Section: science
+Priority: optional
+Homepage: http://edu.kde.org/
+Description: desktop planetarium for KDE
+ KStars is a desktop planetarium for KDE, depicting an accurate graphical
+ simulation of the night sky, from any location on Earth, at any date and time.
+ The display includes 130,000 stars, 13,000 deep-sky objects, all 8 planets,
+ the Sun and Moon, and thousands of comets and asteroids.  It includes tools
+ for astronomical calculations and can control telescopes and cameras.
+ .
+ This package is part of the KDE education module.
+
 Package: kstars-bleeding-data
 Source: kstars-bleeding
 Version: 6:3.7.9+202510070847~ubuntu24.04.1
@@ -387,6 +413,30 @@ Size: 21757260
 MD5sum: 89582e5d8ccfd9d336ac59b9f89d8633
 SHA1: d26e33b7f438cb48b57b72cecdbbc3459c3a95f2
 SHA256: 65a3f34cb4626790eb83489186eb96afa59a6740592ed4fe56a36e6e69dc62a6
+Section: science
+Priority: optional
+Multi-Arch: allowed
+Homepage: http://edu.kde.org/
+Description: data files for KStars desktop planetarium
+ This package contains architecture-independent data files for KStars,
+ the graphical desktop planetarium for KDE, including star catalogues and
+ astronomical images.
+ .
+ This package is part of the KDE education module.
+
+Package: kstars-bleeding-data
+Source: kstars-bleeding
+Version: 6:3.7.9+202510070847~ubuntu24.04.1-astroberry64.1
+Architecture: all
+Maintainer: Jasem Mutlaq <mutlaqja@ikarustech.com>
+Installed-Size: 70558
+Conflicts: kstars-data
+Replaces: kstars-data
+Filename: pool/main/k/kstars-bleeding/kstars-bleeding-data_3.7.9+202510070847~ubuntu24.04.1-astroberry64.1_all.deb
+Size: 21954200
+MD5sum: e63084d7de12f9b82af9e27c6a432420
+SHA1: dfb85b47f9642a52e1d85c01dea9602b3cdb415d
+SHA256: 91a5b3eed9ab85fca5e3a9deab21c3e69b7c3aa13e36ebabeec4204eb22d3a5e
 Section: science
 Priority: optional
 Multi-Arch: allowed
