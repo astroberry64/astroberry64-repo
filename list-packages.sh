@@ -52,12 +52,13 @@ for deb in pool/main/*/*/*.deb; do
     VERSION=$(dpkg-deb -f "$deb" Version)
     ARCH=$(dpkg-deb -f "$deb" Architecture)
 
-    # Store: PACKAGE_VERSIONS[package_name]="version1:arch1,version2:arch2,..."
+    # Store: PACKAGE_VERSIONS[package_name]="version1|arch1,version2|arch2,..."
+    # Use pipe delimiter to avoid conflict with epoch colons in versions
     KEY="$PKG_NAME"
     if [ -z "${PACKAGE_VERSIONS[$KEY]}" ]; then
-        PACKAGE_VERSIONS[$KEY]="${VERSION}:${ARCH}"
+        PACKAGE_VERSIONS[$KEY]="${VERSION}|${ARCH}"
     else
-        PACKAGE_VERSIONS[$KEY]="${PACKAGE_VERSIONS[$KEY]},${VERSION}:${ARCH}"
+        PACKAGE_VERSIONS[$KEY]="${PACKAGE_VERSIONS[$KEY]},${VERSION}|${ARCH}"
     fi
 done
 
@@ -78,8 +79,8 @@ for PKG_NAME in "${SORTED_PACKAGES[@]}"; do
     # Bubble sort by version (newest first)
     for ((i=0; i<${#SORTED_VERSIONS[@]}; i++)); do
         for ((j=i+1; j<${#SORTED_VERSIONS[@]}; j++)); do
-            VER1="${SORTED_VERSIONS[$i]%%:*}"
-            VER2="${SORTED_VERSIONS[$j]%%:*}"
+            VER1="${SORTED_VERSIONS[$i]%%|*}"
+            VER2="${SORTED_VERSIONS[$j]%%|*}"
             set +e
             dpkg --compare-versions "$VER1" lt "$VER2"
             RESULT=$?
@@ -116,15 +117,15 @@ for PKG_NAME in "${SORTED_PACKAGES[@]}"; do
     if [ $SHOW_ALL -eq 1 ]; then
         # Show all versions
         for ITEM in "${SORTED_VERSIONS[@]}"; do
-            VERSION="${ITEM%%:*}"
-            ARCH="${ITEM#*:}"
+            VERSION="${ITEM%%|*}"
+            ARCH="${ITEM#*|}"
             echo -e "  ${GREEN}$VERSION${NC} ($ARCH)"
         done
     else
         # Show latest version only
         LATEST="${SORTED_VERSIONS[0]}"
-        VERSION="${LATEST%%:*}"
-        ARCH="${LATEST#*:}"
+        VERSION="${LATEST%%|*}"
+        ARCH="${LATEST#*|}"
         echo -e "  ${GREEN}$VERSION${NC} ($ARCH)"
     fi
     echo ""
