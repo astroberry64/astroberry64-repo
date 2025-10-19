@@ -19,10 +19,10 @@ Architecture: all
 Maintainer: Astroberry64 Team <astroberry64@speckle.red>
 Installed-Size: 97
 Filename: pool/main/a/astroberry64-server-artwork/astroberry64-server-artwork_2.0.1-astroberry64.2_all.deb
-Size: 72932
-MD5sum: 9c63a3931ac690d7659e020681951e5c
-SHA1: f666b7107d9fa8a7290a02dac3cbf35484f9437c
-SHA256: 04a4690494096d1e33714015523e090587a204b36050f20f589594045049e9ad
+Size: 73008
+MD5sum: 23c96cc6a6af67ae74e54ba644e975b9
+SHA1: 0a1375f647ddb2e9f0b455acd2cabe6418e786d7
+SHA256: 40f69057154fc66617b79778d0bdae18af13a2a4766e24449b939fc8335dccfc
 Section: x11
 Priority: extra
 Homepage: https://github.com/astroberry64
