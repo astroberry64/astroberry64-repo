@@ -127,6 +127,23 @@ Homepage: https://github.com/astroberry64
 Description: Astroberry64 Server is a ready to use astronomy desktop system for Raspberry Pi
  This is package provides wireless hotspot functionality for Astroberry64 Server
 
+Package: astroberry64-server-hotspot
+Version: 2.0.0-astroberry64.3
+Architecture: all
+Maintainer: Astroberry64 Team <astroberry64@speckle.red>
+Installed-Size: 20
+Depends: network-manager, network-manager-gnome
+Filename: pool/main/a/astroberry64-server-hotspot/astroberry64-server-hotspot_2.0.0-astroberry64.3_all.deb
+Size: 3120
+MD5sum: 7b1ff9131c25d28a21a9996d6ea2ea0d
+SHA1: ad7bea9891e90c5c2197ed54ce78878b9debe32e
+SHA256: 50072a30f1ee1a806aa3a3ae6ef2c256bc54d131eb9528be438905e8127a64cc
+Section: science
+Priority: extra
+Homepage: https://github.com/astroberry64
+Description: Astroberry64 Server is a ready to use astronomy desktop system for Raspberry Pi
+ This is package provides wireless hotspot functionality for Astroberry64 Server
+
 Package: astroberry64-server-sysmod
 Version: 2.0.6-astroberry64.3
 Architecture: all
