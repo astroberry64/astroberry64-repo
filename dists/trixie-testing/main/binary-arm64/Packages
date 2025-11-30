@@ -365,6 +365,33 @@ Description: INDI server, drivers and tools
  This package contains the INDI server, the drivers for the supported
  astronomical instrumentation, and other INDI tools.
 
+Package: indi-bin
+Source: libindi
+Version: 2.1.6-astroberry64.1
+Architecture: arm64
+Maintainer: Jasem Mutlaq <mutlaqja@ikarustech.com>
+Installed-Size: 24538
+Depends: libc6 (>= 2.38), libcfitsio10t64 (>= 4.2.0~), libcurl3t64-gnutls (>= 7.16.2), libev4t64 (>= 1:4.04), libgcc-s1 (>= 3.0), libindi1, libnova-0.16-0t64 (>= 0.16), librtlsdr0, libstdc++6 (>= 14), libusb-1.0-0 (>= 2:1.0.9), zlib1g (>= 1:1.1.4), libindi-data (>= 2.1.6-astroberry64.1)
+Conflicts: indi-astrolink4, indi-astromechfoc, indi-dreamfocuser, indi-spectracyber
+Replaces: indi-astrolink4, indi-astromechfoc, indi-dreamfocuser, indi-spectracyber
+Filename: pool/main/libi/libindi/indi-bin_2.1.6-astroberry64.1_arm64.deb
+Size: 2892188
+MD5sum: 6721641f05697c10ee9f43dd932fd95f
+SHA1: c4f28b2b614e28d8143c687e538ec9360021c241
+SHA256: 785fe3b06da9ff569dff72b7ce097b95dec59bf9603e069bb118fd6bc0e278b9
+Section: misc
+Priority: optional
+Homepage: http://www.indilib.org/
+Description: INDI server, drivers and tools
+ INDI (Instrument-Neutral Device Interface) is a distributed XML-based
+ control protocol designed to operate astronomical instrumentation.
+ INDI is small, flexible, easy to parse, scalable, and stateless.
+ It supports common DCS functions such as remote control, data acquisition,
+ monitoring, and a lot more.
+ .
+ This package contains the INDI server, the drivers for the supported
+ astronomical instrumentation, and other INDI tools.
+
 Package: kstars-bleeding
 Version: 6:3.7.9+202510070847~ubuntu24.04.1
 Architecture: arm64
@@ -513,6 +540,30 @@ Description: Instrument-Neutral Device Interface library -- shared data
  .
  This package contains the data files for the INDI library.
 
+Package: libindi-data
+Source: libindi
+Version: 2.1.6-astroberry64.1
+Architecture: all
+Maintainer: Jasem Mutlaq <mutlaqja@ikarustech.com>
+Installed-Size: 121
+Filename: pool/main/libi/libindi/libindi-data_2.1.6-astroberry64.1_all.deb
+Size: 63840
+MD5sum: ded5868ce73f5735eec82fbd03c83dbc
+SHA1: f0ef6b10ca8606b7b6f002d38dba8b70e30f7cca
+SHA256: 1531289e27945ac1240141b4f3e3010736b9d9b286ae17b6465c7d242cb5a87c
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.indilib.org/
+Description: Instrument-Neutral Device Interface library -- shared data
+ INDI (Instrument-Neutral Device Interface) is a distributed XML-based
+ control protocol designed to operate astronomical instrumentation.
+ INDI is small, flexible, easy to parse, scalable, and stateless.
+ It supports common DCS functions such as remote control, data acquisition,
+ monitoring, and a lot more.
+ .
+ This package contains the data files for the INDI library.
+
 Package: libindi-dev
 Source: libindi
 Version: 2.1.5
@@ -549,6 +600,30 @@ Size: 1025524
 MD5sum: edf0aa31c51b7410049bd8c03797a12c
 SHA1: f871d109048f349ada1e8272b3c89605233fbce1
 SHA256: e0ec00ba6783735fe2529e62dab6eca52bae751bc8983e9c5d8e0fc144cb69ee
+Section: libdevel
+Priority: optional
+Homepage: http://www.indilib.org/
+Description: Instrument-Neutral Device Interface library -- development files
+ INDI (Instrument-Neutral Device Interface) is a distributed XML-based
+ control protocol designed to operate astronomical instrumentation.
+ INDI is small, flexible, easy to parse, scalable, and stateless.
+ It supports common DCS functions such as remote control, data acquisition,
+ monitoring, and a lot more.
+ .
+ This package contains development headers and libraries for the INDI library.
+
+Package: libindi-dev
+Source: libindi
+Version: 2.1.6-astroberry64.1
+Architecture: arm64
+Maintainer: Jasem Mutlaq <mutlaqja@ikarustech.com>
+Installed-Size: 9563
+Depends: libindi1 (= 2.1.6-astroberry64.1), libusb-1.0-0-dev
+Filename: pool/main/libi/libindi/libindi-dev_2.1.6-astroberry64.1_arm64.deb
+Size: 1025104
+MD5sum: f87f212d96ab1cff8ebc92d0b1022798
+SHA1: ba5b4ee5155a6c5dfc1b3e9c9bead01f79bcc393
+SHA256: dc409723c9af577543335de6519a8b2495df6011bdd02a25d4dc41329eff1e6c
 Section: libdevel
 Priority: optional
 Homepage: http://www.indilib.org/
@@ -602,6 +677,33 @@ Size: 753956
 MD5sum: 0d0a568d4f9f43033bc0c1cb528fabf3
 SHA1: 9cf480d5f43a2c6b535cb3a99c97cfba90a666ac
 SHA256: 5e666e9b9521b68dbdfb9d64bd5ac9779d5974894a0c082cab43f24a8024e7ff
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.indilib.org/
+Description: Instrument-Neutral Device Interface library -- shared library
+ INDI (Instrument-Neutral Device Interface) is a distributed XML-based
+ control protocol designed to operate astronomical instrumentation.
+ INDI is small, flexible, easy to parse, scalable, and stateless.
+ It supports common DCS functions such as remote control, data acquisition,
+ monitoring, and a lot more.
+ .
+ This package contains the shared library.
+
+Package: libindi1
+Source: libindi
+Version: 2.1.6-astroberry64.1
+Architecture: arm64
+Maintainer: Jasem Mutlaq <mutlaqja@ikarustech.com>
+Installed-Size: 3753
+Depends: libc6 (>= 2.38), libcfitsio10t64 (>= 4.2.0~), libcurl3t64-gnutls (>= 7.16.2), libfftw3-double3 (>= 3.3.10), libgcc-s1 (>= 3.0), libgsl28 (>= 2.8+dfsg), libgslcblas0 (>= 2.8), libjpeg62-turbo (>= 1.3.1), libnova-0.16-0t64 (>= 0.16), libogg0 (>= 1.0rc3), libstdc++6 (>= 14), libtheoradec1 (>= 1.0), libtheoraenc1 (>= 1.0), libusb-1.0-0 (>= 2:1.0.9), libxisf0 (>= 0.2.13), zlib1g (>= 1:1.1.4), libindi-data (>= 2.1.6-astroberry64.1), indi-bin (>= 2.1.6-astroberry64.1)
+Conflicts: libindi-plugins, libindi0, libindialignmentdriver1, libindidriver1
+Replaces: libindi-plugins, libindi0, libindialignmentdriver1, libindidriver1
+Filename: pool/main/libi/libindi/libindi1_2.1.6-astroberry64.1_arm64.deb
+Size: 752876
+MD5sum: 457a18287afe0fd054908b38750e69d7
+SHA1: 002d42f1f3add205c50a7de14a5bf7adf8c8b38a
+SHA256: 8b4e532536ca7e83b4156721ef9e8763e4d1a8b692920fc4798600c3eb995ada
 Section: libs
 Priority: optional
 Multi-Arch: same
